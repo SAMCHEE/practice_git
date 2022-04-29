@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+
+	"github.com/SAMCHEE/practice_git/util"
+)
 
 func main() {
-	fmt.Println("branch slam")
+	fmt.Println("Hello git")
+
+	util.PanicIfErr(nil)
+	util.PanicIfErr(errors.New("Hello error"))
 }
