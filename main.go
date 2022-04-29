@@ -12,4 +12,6 @@ func main() {
 
 	util.PanicIfErr(nil)
 	util.PanicIfErr(errors.New("Hello error"))
+
+	fmt.Println("Bye")
 }
