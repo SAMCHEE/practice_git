@@ -14,4 +14,5 @@ func main() {
 	util.PanicIfErr(errors.New("Hello error"))
 
 	fmt.Println("Bye")
+	fmt.Println("Slam token")
 }
