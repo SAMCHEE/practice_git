@@ -1,0 +1,23 @@
+# git
+
+## 깃 사용자 정보
+$ git config --list
+
+## 사용자 정보 초기화
+$ git config --global user.name [my name]
+$ git config --global user.email [my email]
+
+## 프로젝트폴더에 깃 초기화
+$ git init
+
+## 저장소 리모트 설정
+1. 저장소가 퍼블릭인 경우
+$ git remote add origin https://github.com/[user name]/[repository name]
+2. 저장소가 시크릿일 경우
+$ git remote add origin https://[user name]:[token]@github.com/[user name]/[repository name]
+
+## 첫 푸쉬
+$ git add .
+$ git commit -m "First commit"
+$ git branch -M main
+$ git push origin main --set-upstream
